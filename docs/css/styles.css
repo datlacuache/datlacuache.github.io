@@ -11289,6 +11289,22 @@ textarea.form-control-lg {
 body,
 html {
   height: 100%;
+  font-family: "League Spartan", sans-serif;
+}
+
+h2, .h2 {
+  font-family: "Permanent Marker", sans-serif;
+}
+
+nav {
+  position: fixed;
+  z-index: 1;
+  background-color: black;
+  font-size: 1.2em;
+}
+
+footer {
+  background-color: black;
 }
 
 .feature {
@@ -11312,4 +11328,21 @@ html {
 .masthead {
   height: 95vh;
   min-height: 500px;
+  position: relative;
+  padding: 50;
+}
+
+#particles-js {
+  transform: translate3d(0, 0, 0);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -webkit-perspective: 1000;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  position: absolute;
+  z-index: 0;
+  overflow: hidden;
+  background-color: black;
 }
