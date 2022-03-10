@@ -9,13 +9,23 @@ particlesJS.load('particles-js', './js/particlesjs-config.json', function() {
 });
 
 
-const express = require('express');
-const app = express();
-
-app.get('/', (req, res) => {
-    res.sendFile('index.html', { root: __dirname });
+// Lightbox
+lightbox.option({
+    resizeDuration: 200,
+    wrapAround: true,
+    fadeDuration: 250,
+    imageFadeDuration: 250,
 });
 
-app.get('/nosotros', (req, res) => {
-    res.sendFile('about.html', { root: __dirname });
-});
+
+// Express
+// const express = require('express');
+// const app = express();
+
+// app.get('/', (req, res) => {
+//     res.sendFile('index.html', { root: __dirname });
+// });
+
+// app.get('/nosotros', (req, res) => {
+//     res.sendFile('about.html', { root: __dirname });
+// });
