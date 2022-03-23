@@ -18,22 +18,22 @@ lightbox.option({
 });
 
 
-// Express
-const express = require('express');
-const app = express();
+// // Express
+// const express = require('express');
+// const app = express();
 
-app.get('/', (req, res) => {
-    res.sendFile('index.html', { root: __dirname });
-});
+// app.get('/', (req, res) => {
+//     res.sendFile('index.html', { root: __dirname });
+// });
 
-app.get('/nosotros', (req, res) => {
-    res.sendFile('about.html', { root: __dirname });
-});
+// app.get('/nosotros', (req, res) => {
+//     res.sendFile('about.html', { root: __dirname });
+// });
 
-app.get('/soluciones', (req, res) => {
-    res.sendFile('solutions.html', { root: __dirname });
-});
+// app.get('/soluciones', (req, res) => {
+//     res.sendFile('solutions.html', { root: __dirname });
+// });
 
-app.get('/contacto', (req, res) => {
-    res.sendFile('contact.html', { root: __dirname });
-});
+// app.get('/contacto', (req, res) => {
+//     res.sendFile('contact.html', { root: __dirname });
+// });

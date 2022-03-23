@@ -1,0 +1,54 @@
+doctype html
+html(lang='en')
+
+    head
+
+        meta(charset='utf-8')
+        meta(name='viewport', content='width=device-width, initial-scale=1, shrink-to-fit=no')
+        meta(name='description', content='')
+        meta(name='author', content='')
+
+        title Datlacuache | Data Driven Solutions
+
+        // Favicon
+        link(rel='icon', type='image/x-icon', href='assets/logo_white.png')
+
+        include includes/css.pug
+
+    body.d-flex.flex-column.h-100
+
+        main.flex-shrink-0
+
+            // Navigation
+            include includes/navbar.pug
+
+            // Page Content
+            section.py-5
+                .container.px-5.my-5
+                    .text-center.mb-5
+                        h1.fw-bolder Soluciones
+                        p.lead.fw-normal.text-muted.mb-0 Conoce algunos de nuestros casos de éxito en la industria
+
+                    .row.gx-5
+                        .col-lg-6
+                            .position-relative.mb-5
+                                a(href='assets/people_detected.gif', data-lightbox='solutions')
+                                    img.img-fluid.rounded-3.mb-3(src='assets/people_detected.gif', alt='Afluencia de personas', width='600')
+                                h3.fw-bolder.text-decoration-none.link-dark Densidad de personas
+                                p Utilizado para identificación y estimación de densidad de personas en un espacio determinado.
+                        .col-lg-6
+                            .position-relative.mb-5
+                                a(href='assets/people_detected.gif', data-lightbox='solutions')
+                                    img.img-fluid.rounded-3.mb-3(src='assets/people_detected.gif', alt='Afluencia de personas', width='600')
+                                h3.fw-bolder.text-decoration-none.link-dark Flujo vehicular
+                                p Utilizado para identificación y conteo de vehículos en espacios de tránsito.
+            
+            section.py-5.bg-light
+                .container.px-5.my-5
+                    h2.display-5.fw-bolder.mb-4.marker Construyamos el futuro. Juntos.
+                    a.btn.btn-lg.btn-primary(href='contact.html') Contáctanos 📩
+
+        // Footer
+        include includes/footer.pug
+
+        include includes/scripts.pug
