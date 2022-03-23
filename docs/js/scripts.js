@@ -9,7 +9,7 @@
 // DOM HTML Back-end
 
 /* particlesJS.load(@dom-id, @path-json, @callback (optional)); */
-particlesJS.load('particles-js', './js/particlesjs-config.json', function() {
+particlesJS.load('particles-js', './js/particlesjs-config.json', function () {
     console.log('Particles.js loaded successfully!');
 });
 
@@ -24,13 +24,21 @@ lightbox.option({
 
 
 // Express
-// const express = require('express');
-// const app = express();
+const express = require('express');
+const app = express();
 
-// app.get('/', (req, res) => {
-//     res.sendFile('index.html', { root: __dirname });
-// });
+app.get('/', (req, res) => {
+    res.sendFile('index.html', { root: __dirname });
+});
 
-// app.get('/nosotros', (req, res) => {
-//     res.sendFile('about.html', { root: __dirname });
-// });
+app.get('/nosotros', (req, res) => {
+    res.sendFile('about.html', { root: __dirname });
+});
+
+app.get('/soluciones', (req, res) => {
+    res.sendFile('solutions.html', { root: __dirname });
+});
+
+app.get('/contacto', (req, res) => {
+    res.sendFile('contact.html', { root: __dirname });
+});
